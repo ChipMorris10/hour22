@@ -5,8 +5,8 @@
   <link rel="stylesheet" type="text.css" href="main.css">
 </head>
 <body>
-<h1>My Guest Book</h1>
-<form name="gbForm" method="post" action="URL_to_script">
+  <h1>My Guest Book</h1>
+  <form name="gbForm" method="post" action="URL_to_script">
 
   <fieldset>
     <legend>Personal Information</legend>
@@ -17,39 +17,47 @@
 
     <p><label class="question" for="the_email">What is your e-mail address?</label>
     <input type="email" id="the_email" name="the_email"
-    placeholder="Enter your email address."
-    size="50" required /></p>
+    placeholder="Enter your email address." size="50" required /></p>
   </fieldset>
 
   <fieldset>
     <legend>Survey Questions</legend>
 
     <p><span class="question">Please check all that apply:</span><br/>
+
     <input type="checkbox" id="like_it" name="some_statements[]"
     value="I really your Web site" />
     <label for="like_it">I really like your Web site.</label><br />
-    <input type="checkbox" id="the_best" name="some_statement[]"
-    value="It's one of the best sites I've ever seen." /<
-    <label for="the_best">It's one of the best sites I've ever seen.</label><br/>
+
+    <input type="checkbox" id="like_it" name="some_statements[]"
+    value="It's one of the best I've seen." />
+    <label for="like_it">It's one of the best I've seen.</label><br />
 
     <input type="checkbox" id="jealous" name="some_statements[]"
     value="I sure wish my site looked as good as yours" />
-    <label for="jealous">I sure wish my site looked as good as yours</label><br/>
+    <label for="jealous">I sure wish my site looked as good as yours.</label><br/>
+
     <input type="checkbox" id="no_taste" name="some_statements[]" value="I have no taste and I'm pretty dense, so your site didn't do much for me." />
-    <label for="no_taste">I have no taste and I'm pretty dense, so your site didn't do much for me</label></p>
+    <label for="no_taste">I have no taste and I'm pretty dense, so your site didn't do much for me.</label></p>
+
 
     <p><label for="choose_scale"><span class="question">Please rate my site on a scale of 1 (poor) to 10 (awesome):</span></label>
     <input type="number" id="choose_scale" name="choose_scale" min="0" max="10" step="1" value="5"/></p>
 
     <p><span class="question">Please choose the one thing you love best about my web site:</span><br/>
+
     <input type="radio" id-"the_picture" name="best_thing" value="me" />
     <label for="the_picture">That amazing picture of you</label><br/>
+
     <input type="radio" id="the_cats" name="best_thing" value="cats" />
     <label for="the_cats">All the cat potos, of course</label><br/>
+
     <input type="radio" id="the_story" name="best_thing" value="childhood story" />
     <label for="the_story">The inspiring recap of your suburban childhood</label><br/>
+
     <input type="radio" id="the_treasure" name="best_thing" value="Elvis treasures" />
     <label for="the_treasures">The detailed list of all your Elvis memorabilia</label></p>
+
 
     <p><label for="how_improve"><span class="question">How can I improve my web site?</span></label><br/>
     <select id="how_improve" name="how_improve" size="4" multiple>
@@ -57,9 +65,7 @@
       <option value="More about cats.">More about cats.</option>
       <option value="More about Elivs">More about Elvis.</option>
       <option value="More about the family">More about the family.</option>
-
     </select></p>
-
   </fieldset>
 
   <fieldset>
